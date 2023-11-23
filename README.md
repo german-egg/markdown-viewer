@@ -1,30 +1,63 @@
-# React + TypeScript + Vite
+# Markdown Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+Markdown Viewer is a web application built with React, designed to render Markdown files directly from URLs. It's a handy tool for viewing and sharing Markdown content seamlessly in a browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **URL-based Markdown Rendering**: Users can input a URL linking to a Markdown (.md) file, and the app will render it on the screen.
+- **Markdown Parsing with React**: Utilizes `react-markdown` for converting Markdown into React components.
+- **Syntax Highlighting**: Implements `react-syntax-highlighter` for enhanced code readability within Markdown files.
+- **Data Fetching and Caching**: Leverages `tanstack/react-query` for efficient data fetching and caching of Markdown content.
+- **Modern Bundling with Vite**: Built using Vite, ensuring fast development and optimized production builds.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation and Setup
 
-- Configure the top-level `parserOptions` property like this:
+To set up Markdown Viewer locally, follow these steps:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:galiprandi/react-markdown.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd markdown-viewer
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+
+1. Open the application in your web browser.
+2. Enter the URL of the Markdown file you want to view in the input field.
+3. Click the 'Render' button to display the Markdown content.
+
+## Author
+
+Markdown Viewer is developed by Germán Aliprandi. For inquiries, suggestions, or contributions, feel free to reach out:
+
+- **Name**: Germán Aliprandi
+- **Email**: galiprandi@gmail.com
+
+## Contributing
+
+Contributions to Markdown Viewer are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) for more information.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For questions and suggestions, feel free to open an issue or contact us directly.
+
+---
+
+Markdown Viewer – effortlessly view Markdown files from any URL.
