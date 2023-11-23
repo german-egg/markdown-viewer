@@ -1,5 +1,9 @@
 # Markdown Viewer
 
+## Demo
+
+You can view a live demo of the project here: [Markdown Viewer Demo](https://german-egg.github.io/markdown-viewer/)
+
 ## Introduction
 
 Markdown Viewer is a web application built with React, designed to render Markdown files directly from URLs. It's a handy tool for viewing and sharing Markdown content seamlessly in a browser.
