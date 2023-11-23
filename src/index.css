@@ -1,0 +1,13 @@
+.nav {
+  position: sticky;
+  top: 0;
+  padding-bottom: 2em;
+  background-color: white;
+  margin: -2px;
+}
+
+.document {
+  outline: 1px solid lightgray;
+  padding: 2em 3em;
+  margin: 3em 0;
+}
