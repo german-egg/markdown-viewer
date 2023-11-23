@@ -4,6 +4,8 @@
 
 Markdown Viewer is a web application built with React, designed to render Markdown files directly from URLs. It's a handy tool for viewing and sharing Markdown content seamlessly in a browser.
 
+![Screenshot of the application](./screenshot.png)
+
 ## Features
 
 - **URL-based Markdown Rendering**: Users can input a URL linking to a Markdown (.md) file, and the app will render it on the screen.
@@ -21,13 +23,17 @@ To set up Markdown Viewer locally, follow these steps:
    git clone git@github.com:galiprandi/react-markdown.git
    ```
 2. Navigate to the project directory:
+
    ```bash
    cd markdown-viewer
    ```
+
 3. Install dependencies:
+
    ```bash
    npm install
    ```
+
 4. Start the development server:
    ```bash
    npm run dev
@@ -38,26 +44,23 @@ To set up Markdown Viewer locally, follow these steps:
 1. Open the application in your web browser.
 2. Enter the URL of the Markdown file you want to view in the input field.
 3. Click the 'Render' button to display the Markdown content.
+4. Here is an example of how to use the application:
 
-## Author
+## Contribution
 
-Markdown Viewer is developed by Germán Aliprandi. For inquiries, suggestions, or contributions, feel free to reach out:
-
-- **Name**: Germán Aliprandi
-- **Email**: galiprandi@gmail.com
-
-## Contributing
-
-Contributions to Markdown Viewer are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) for more information.
+If you wish to contribute to the project, please read our Contribution Guide.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License. For more details, please see the LICENSE file.
 
-## Contact
+## Credits
 
-For questions and suggestions, feel free to open an issue or contact us directly.
+Thanks to everyone who has contributed to this project.
 
----
+## Author
 
-Markdown Viewer – effortlessly view Markdown files from any URL.
+Markdown Viewer is developed by Germán Aliprandi. For inquiries, suggestions, or contributions, feel free to get in touch:
+
+Name: Germán Aliprandi
+Email: galiprandi@gmail.com
