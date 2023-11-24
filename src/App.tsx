@@ -14,11 +14,11 @@ function App() {
       <nav className="nav">
         <h1>Markdown Viewer</h1>
         <label>
-          URL of markdown file:
+          Markdown text or URL of file:
           <input
-            id="url"
-            type="url"
-            placeholder="URL of markdown file"
+            id="text"
+            type="text"
+            placeholder="Markdown text or URL of file"
             value={url}
             list="urls"
             onChange={({ target: { value } }) => setUrl(value)}
@@ -35,7 +35,6 @@ function App() {
       </nav>
 
       <main className="document">
-        <MD doc="`The lift coefficient ($C_L$) is a dimensionless coefficient.`" />
         <MD doc={doc} />
       </main>
       <footer>

@@ -1,13 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
 import Axios from "axios";
+import isUrl from "is-url";
 
-export const useDocuments = (url?: string) => {
-  const queryKey = ["documents", url];
-  const queryFn = async () => Axios.get(`${url}`).then(({ data }) => data);
-  const { data: doc, ...rest } = useQuery({
+export const useDocuments = (text?: string) => {
+  const queryKey = ["documents", text];
+  const queryFn = async () => Axios.get(`${text}`).then(({ data }) => data);
+  const { data, ...rest } = useQuery({
     queryKey,
     queryFn,
-    enabled: !!url,
+    enabled: !!text && isUrl(text),
   });
-  return { doc, ...rest };
+  return { doc: isUrl(`${text}`) ? data : text, ...rest };
 };
