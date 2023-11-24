@@ -11,3 +11,7 @@
   padding: 2em 3em;
   margin: 3em 0;
 }
+
+.document img {
+  width: -webkit-fill-available;
+}
