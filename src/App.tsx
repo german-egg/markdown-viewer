@@ -18,12 +18,22 @@ function App() {
         <label>
           URL of markdown file:
           <input
+            id="url"
             type="url"
             placeholder="URL of markdown file"
             value={url}
+            list="urls"
             onChange={({ target: { value } }) => setUrl(value)}
           />
         </label>
+        <datalist id="urls">
+          <option value="https://raw.githubusercontent.com/german-egg/markdown-viewer/main/README.md">
+            markdown-viewer README.md
+          </option>
+          <option value="https://raw.githubusercontent.com/facebook/react/main/README.md">
+            React README.md
+          </option>
+        </datalist>
       </nav>
 
       <main className="document">
