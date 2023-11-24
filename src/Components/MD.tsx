@@ -4,7 +4,6 @@ import Markdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import remarkGfm from "remark-gfm";
-import remarkMdx from "remark-mdx";
 
 export const MD = ({ doc }: { doc?: string }) => {
   if (!doc) return null;
@@ -30,7 +29,7 @@ export const MD = ({ doc }: { doc?: string }) => {
           );
         },
       }}
-      remarkPlugins={[remarkGfm, remarkMdx]}
+      remarkPlugins={[remarkGfm]}
       children={doc}
     />
   );

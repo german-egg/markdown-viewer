@@ -31,6 +31,9 @@ function App() {
           <option value="https://raw.githubusercontent.com/facebook/react/main/README.md">
             React README.md
           </option>
+          <option value="https://gist.githubusercontent.com/stevenyap/7038119/raw/e484a7da2578d1c4bd14e1fcaf974ade4ba76aa4/Github%2520Flavored%2520Markdown.md">
+            Github Flavored Markdown
+          </option>
         </datalist>
       </nav>
 
