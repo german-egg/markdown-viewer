@@ -13,5 +13,5 @@
 }
 
 .document img {
-  width: -webkit-fill-available;
+  max-width: -webkit-fill-available;
 }
