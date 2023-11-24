@@ -61,6 +61,12 @@ function App() {
           }}
         />
       </main>
+      <footer>
+        <p>
+          Markdown Viewer is developed by{" "}
+          <a href="mailto:galiprandi@gmail.com">Germán Aliprandi</a>
+        </p>
+      </footer>
     </>
   );
 }
