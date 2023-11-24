@@ -66,5 +66,6 @@ Thanks to everyone who has contributed to this project.
 
 Markdown Viewer is developed by Germán Aliprandi. For inquiries, suggestions, or contributions, feel free to get in touch:
 
-Name: Germán Aliprandi
-Email: galiprandi@gmail.com
+### Germán Aliprandi
+
+galiprandi@gmail.com
