@@ -3,8 +3,14 @@ import { useDocuments } from "./Hooks/useDocuments";
 import { MD } from "./Components/MD";
 
 function App() {
+  const queryParameters = new URLSearchParams(window.location.search);
+  const urlFromParams = queryParameters.get("url");
+
+  console.log({ urlFromParams });
+
   const [url, setUrl] = useState(
-    "https://raw.githubusercontent.com/facebook/react/main/README.md"
+    urlFromParams ??
+      "https://raw.githubusercontent.com/facebook/react/main/README.md"
   );
 
   const { doc } = useDocuments(url);
