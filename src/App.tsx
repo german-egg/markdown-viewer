@@ -1,8 +1,6 @@
 import { useState } from "react";
-import MD from "react-markdown";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { useDocuments } from "./Hooks/useDocuments";
+import { MD } from "./Components/MD";
 
 function App() {
   const [url, setUrl] = useState(
@@ -37,29 +35,8 @@ function App() {
       </nav>
 
       <main className="document">
-        <MD
-          children={doc}
-          components={{
-            code(props) {
-              const { children, className, ...rest } = props;
-              const match = /language-(\w+)/.exec(className || "");
-              return match ? (
-                //@ts-expect-error - I don't know how to fix this
-                <SyntaxHighlighter
-                  {...rest}
-                  PreTag="div"
-                  children={String(children).replace(/\n$/, "")}
-                  language={match[1]}
-                  style={vscDarkPlus}
-                />
-              ) : (
-                <code {...rest} className={className}>
-                  {children}
-                </code>
-              );
-            },
-          }}
-        />
+        <MD doc="`The lift coefficient ($C_L$) is a dimensionless coefficient.`" />
+        <MD doc={doc} />
       </main>
       <footer>
         <p>
